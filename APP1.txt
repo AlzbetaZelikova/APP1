@@ -1,1 +1,25 @@
 Sestavte program, který bude od uživatele načítat čísla. Načítejte do té doby, dokud je posloupnost čísel rostoucí. Spočítejte průměrnou hodnotu zadaných čísel. Tuto informaci vypište na konzoli.
+
+Console.WriteLine("Zadejte čísla");
+int cislo;
+int pr_cislo = 0;
+double suma = 0;
+int pocet = 0;
+
+while (true)
+{
+	cislo = int.Parse(Console.ReadLine());
+	if(cislo > pr_cislo)
+	{
+		suma+= cislo;
+		pocet++;
+		pr_cislo=cislo;
+	}
+	else
+	{
+		break;
+	}
+}
+
+double d = (suma / pocet);
+Console.WriteLine("Průměrná hodnota zadaných čísel je: " + d);
