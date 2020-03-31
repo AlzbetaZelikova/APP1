@@ -1,0 +1,1 @@
+Sestavte program, který bude od uživatele načítat čísla. Načítejte do té doby, dokud je posloupnost čísel rostoucí. Spočítejte průměrnou hodnotu zadaných čísel. Tuto informaci vypište na konzoli.
